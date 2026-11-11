@@ -1,0 +1,67 @@
+===== CONFIGURATION =====
+[ga]
+pop_size = 50
+generations = 100
+crossover = "uniform"
+mutation_rate = 0.1
+elite_ratio = 0.5
+
+[nlp]
+input_file = "data/texte2.txt"
+use_stopwords = true
+
+[fitness]
+alpha = 1.0
+gamma = 0.3
+beta = 0.5
+
+[convergence]
+enabled = true
+min_delta = 1.0e-6
+patience = 15
+
+===== RESULTATS =====
+Chromosome : [0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0]
+Fitness : 0.6103479167886733
+Generations : 27
+Phrases selectionnees : 8
+Ratio : 0.32
+
+===== RESUME =====
+Ce mécanisme aide le modèle à relier des éléments éloignés dans une phrase.
+La phase de préentraînement mobilise généralement des ressources de calcul importantes.
+L'analyse de sentiments cherche à déterminer la polarité d'un avis.
+La recherche d'information identifie les passages pertinents pour une question.
+Le résumé automatique répond au besoin de parcourir rapidement de longs documents.
+Une phrase proche du vecteur global peut contribuer à la représentativité du résumé.
+La sélection favorise les chromosomes obtenant les meilleurs scores.
+Le croisement combine les choix de phrases de deux solutions parentes.
+
+===== HISTORIQUE FITNESS =====
+1;0.5726403311336048
+2;0.5913443433486195
+3;0.5913443433486195
+4;0.5940545096334778
+5;0.603209635031102
+6;0.604313131225746
+7;0.6058316311133165
+8;0.6058316311133165
+9;0.6101890007132685
+10;0.6101890007132685
+11;0.6101890007132685
+12;0.6103479167886733
+13;0.6103479167886733
+14;0.6103479167886733
+15;0.6103479167886733
+16;0.6103479167886733
+17;0.6103479167886733
+18;0.6103479167886733
+19;0.6103479167886733
+20;0.6103479167886733
+21;0.6103479167886733
+22;0.6103479167886733
+23;0.6103479167886733
+24;0.6103479167886733
+25;0.6103479167886733
+26;0.6103479167886733
+27;0.6103479167886733

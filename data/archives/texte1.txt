@@ -1,0 +1,15 @@
+Le traitement automatique des langues permet aux ordinateurs d'analyser des textes écrits en langage naturel.
+Cette discipline combine des méthodes linguistiques, statistiques et informatiques.
+Les premières approches reposaient principalement sur des règles définies par des spécialistes.
+Les méthodes statistiques ont ensuite exploité de grandes collections de documents.
+Aujourd'hui, les réseaux de neurones occupent une place importante dans ce domaine.
+Les modèles de langage apprennent des régularités à partir de nombreux exemples textuels.
+Ils peuvent aider à classer des documents selon leur thème.
+Ils servent également à identifier les opinions exprimées dans des commentaires.
+La traduction automatique constitue une autre application du traitement des langues.
+Le résumé automatique vise à condenser un document tout en conservant ses informations essentielles.
+Une méthode extractive sélectionne des phrases déjà présentes dans le texte original.
+Une méthode abstractive produit de nouvelles formulations à partir du contenu analysé.
+Les représentations TF-IDF attribuent des poids aux mots selon leur fréquence et leur rareté.
+Les algorithmes génétiques peuvent rechercher une combinaison pertinente de phrases pour un résumé extractif.
+La qualité du résumé dépend notamment de sa couverture thématique, de sa longueur et de sa redondance.

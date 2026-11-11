@@ -1,0 +1,60 @@
+===== CONFIGURATION =====
+[ga]
+pop_size = 50
+generations = 100
+crossover = "uniform"
+mutation_rate = 0.1
+elite_ratio = 0.5
+
+[nlp]
+input_file = "data/texte1.txt"
+use_stopwords = true
+
+[fitness]
+alpha = 1.0
+gamma = 0.3
+beta = 0.5
+
+[convergence]
+enabled = true
+min_delta = 1.0e-6
+patience = 15
+
+===== RESULTATS =====
+Chromosome : [0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+Fitness : 0.6224040808541778
+Generations : 23
+Phrases selectionnees : 5
+Ratio : 0.3333333333333333
+
+===== RESUME =====
+Cette discipline combine des méthodes linguistiques, statistiques et informatiques.
+Les premières approches reposaient principalement sur des règles définies par des spécialistes.
+Ils peuvent aider à classer des documents selon leur thème.
+Ils servent également à identifier les opinions exprimées dans des commentaires.
+La traduction automatique constitue une autre application du traitement des langues.
+
+===== HISTORIQUE FITNESS =====
+1;0.6005712897139717
+2;0.6005712897139717
+3;0.6005712897139717
+4;0.6148642623714767
+5;0.6148642623714767
+6;0.615991228200086
+7;0.615991228200086
+8;0.6224040808541778
+9;0.6224040808541778
+10;0.6224040808541778
+11;0.6224040808541778
+12;0.6224040808541778
+13;0.6224040808541778
+14;0.6224040808541778
+15;0.6224040808541778
+16;0.6224040808541778
+17;0.6224040808541778
+18;0.6224040808541778
+19;0.6224040808541778
+20;0.6224040808541778
+21;0.6224040808541778
+22;0.6224040808541778
+23;0.6224040808541778

@@ -1,0 +1,30 @@
+# Source  : MLSUM/fr — Le Monde — https://huggingface.co/datasets/mteb/mlsum (config fr, split test)
+# Titre   : Un adolescent de 14 ans visé par un tir de LBD à Marseille : le parquet ouvre une enquête
+# Thème   : société  |  Date : 04/06/2019
+# Difficulté : 2/4 — texte moyen (~25 phrases), style journalistique factuel, citations directes
+#
+Un adolescent de 14 ans a été blessé à la tête par un tir de lanceur de balles de défense (LBD) lors de la manifestation des « gilets jaunes » à Marseille, le 1er décembre 2018.
+Le parquet de Marseille a ouvert une enquête préliminaire pour « violences volontaires aggravées par personne dépositaire de l'autorité publique ».
+Des heurts en marge de la manifestation de « gilets jaunes » à Marseille, le 8 décembre 2018.
+Cette enquête préliminaire vient s'ajouter à une autre enquête sur des violences policières commises le même jour sur une jeune femme de 19 ans, qui avait été rouée de coups par des membres des forces de l'ordre.
+L'adolescent, dont l'avocat est Me Brice Grazzini, se trouvait dans le cortège avec son père lorsque des affrontements ont éclaté entre des manifestants et les forces de l'ordre.
+« Il a été identifié et touché ensuite en pleine tête et de dos » par un tir de LBD, ajoute le conseil.
+Il souffre d'un traumatisme crânien et d'une « fracture occipitale ».
+Le garçon ne sort plus de chez lui et a dû interrompre sa scolarité durant deux mois.
+L'avocat critique le délai entre les faits et l'ouverture de l'enquête.
+« Cela empêche de prendre rapidement en compte la gravité de l'infraction et de saisir les images de vidéosurveillance » en temps utile, dénonce-t-il.
+La famille avait signalé les faits à la police dès le lendemain des violences.
+Après un signalement effectué sur le site de l'IGPN, on lui a assuré dans un commissariat marseillais que cette démarche sur Internet suffisait.
+Le 14 mars, l'avocat a déposé plainte auprès du parquet pour « tentative d'homicide volontaire » et a transmis les éléments médicaux attestant des blessures.
+Me Brice Grazzini – qui est aussi l'avocat de Maria – évoque une tentative d'homicide volontaire.
+Le cas de Maria, une Marseillaise de 19 ans blessée le même jour, illustre la même problématique.
+Elle se trouvait dans les rues du centre-ville de Marseille lorsqu'elle a été frappée à coups de matraque et de pied par des policiers alors qu'elle ne participait pas à la manifestation.
+Maria sera hospitalisée quinze jours.
+L'IGPN, la police des polices, a été saisie mais ses conclusions ne sont pas encore connues.
+La préfecture de police de Marseille n'a pas souhaité commenter ces affaires.
+Le ministre de l'Intérieur avait rappelé que l'usage du LBD était encadré par des règles strictes.
+Ces affaires s'inscrivent dans un contexte de vive polémique sur les violences policières lors du mouvement des « gilets jaunes ».
+Plusieurs blessés graves ont été recensés depuis le début du mouvement, en novembre 2018.
+Des associations de défense des droits de l'homme ont demandé la suspension de l'usage du LBD.
+C'est une question à laquelle l'enquête préliminaire devra répondre.
+Le dossier a été confié à la brigade criminelle de Marseille.

@@ -1,0 +1,50 @@
+La multiplication des contenus numériques transforme la manière dont les organisations consultent l'information.
+Les équipes doivent parcourir des articles, des rapports et des documents techniques de longueur variable.
+Une lecture exhaustive de tous les documents n'est pas toujours possible dans un temps limité.
+Les systèmes de résumé automatique proposent une synthèse plus courte des contenus disponibles.
+Le traitement automatique des langues fournit plusieurs outils pour construire ces systèmes.
+Les approches extractives sélectionnent des passages existants dans les documents.
+Les approches abstractives génèrent de nouvelles phrases pour reformuler les idées essentielles.
+La méthode extractive présente l'avantage de conserver les formulations du texte source.
+Elle peut toutefois produire des transitions maladroites entre les phrases retenues.
+Une évaluation humaine reste donc utile pour juger la lisibilité du résultat.
+Le découpage du texte en phrases constitue une première étape de préparation.
+Les abréviations et certaines ponctuations rendent parfois cette segmentation difficile.
+Le nettoyage du texte harmonise les formes utilisées pendant les calculs.
+La conversion en minuscules évite de distinguer artificiellement certains mots.
+La suppression de la ponctuation simplifie les représentations fondées sur les termes.
+Les stopwords sont des mots fréquents qui peuvent apporter peu de discrimination lexicale.
+Leur suppression n'améliore pas systématiquement la qualité d'un résumé.
+Une comparaison expérimentale permet de mesurer leur influence sur les résultats.
+La matrice document-termes compte les occurrences des mots dans chaque phrase.
+La pondération TF-IDF combine une mesure de fréquence et une mesure de rareté.
+Chaque phrase est alors représentée par un vecteur de valeurs numériques.
+Le vocabulaire définit les dimensions communes à tous ces vecteurs.
+Le vecteur global du texte peut être obtenu en moyennant les vecteurs des phrases.
+La similarité cosinus compare deux représentations selon leur orientation.
+Cette mesure constitue un indicateur de proximité lexicale plutôt qu'une compréhension complète du sens.
+La représentativité évalue la proximité du résumé avec le document original.
+La redondance estime les répétitions entre les phrases retenues.
+La contrainte de longueur fixe la proportion de phrases à sélectionner.
+Une fonction de fitness rassemble ces critères dans un score unique.
+Les coefficients de pondération déterminent leur importance relative.
+Un chromosome binaire encode la présence ou l'absence de chaque phrase.
+Pour cinquante phrases, l'espace de recherche contient un très grand nombre de combinaisons.
+Une exploration exhaustive de cet espace devient coûteuse en calcul.
+Les métaheuristiques proposent des stratégies de recherche approximatives.
+Un algorithme génétique maintient une population de solutions candidates.
+La population initiale peut être générée avec des chromosomes aléatoires.
+La fonction de fitness attribue une valeur à chaque individu.
+La sélection privilégie les solutions considérées comme les plus prometteuses.
+Le croisement un point construit un enfant à partir de deux segments parentaux.
+Le croisement uniforme sélectionne chaque gène parmi les deux parents.
+La mutation inverse occasionnellement un bit du chromosome enfant.
+L'élitisme protège les meilleurs individus contre leur disparition aléatoire.
+Une population trop petite peut limiter la diversité des solutions explorées.
+Une population plus grande augmente généralement le coût de chaque génération.
+Un taux de mutation élevé peut perturber les bonnes combinaisons déjà trouvées.
+Un taux trop faible peut réduire la capacité de la recherche à explorer de nouvelles solutions.
+Un critère de convergence arrête le calcul après une période sans amélioration suffisante.
+Plusieurs exécutions indépendantes sont nécessaires pour caractériser un algorithme aléatoire.
+Les résultats peuvent être comparés avec des moyennes, des écarts-types et des temps d'exécution.
+L'analyse des résumés doit finalement vérifier leur pertinence, leur diversité et leur cohérence.

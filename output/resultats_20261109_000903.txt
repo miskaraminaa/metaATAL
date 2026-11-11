@@ -1,0 +1,89 @@
+===== CONFIGURATION =====
+[ga]
+pop_size = 50
+generations = 100
+crossover = "uniform"
+mutation_rate = 0.1
+elite_ratio = 0.5
+
+[nlp]
+input_file = "data/texte4.txt"
+use_stopwords = true
+
+[fitness]
+alpha = 1.0
+gamma = 0.3
+beta = 0.5
+
+[convergence]
+enabled = true
+min_delta = 1.0e-6
+patience = 15
+
+===== RESULTATS =====
+Chromosome : [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Fitness : 0.6620021041900142
+Generations : 42
+Phrases selectionnees : 15
+Ratio : 0.3
+
+===== RESUME =====
+Les approches extractives sélectionnent des passages existants dans les documents.
+Elle peut toutefois produire des transitions maladroites entre les phrases retenues.
+Le découpage du texte en phrases constitue une première étape de préparation.
+La suppression de la ponctuation simplifie les représentations fondées sur les termes.
+Chaque phrase est alors représentée par un vecteur de valeurs numériques.
+La représentativité évalue la proximité du résumé avec le document original.
+La contrainte de longueur fixe la proportion de phrases à sélectionner.
+Les coefficients de pondération déterminent leur importance relative.
+Une exploration exhaustive de cet espace devient coûteuse en calcul.
+Les métaheuristiques proposent des stratégies de recherche approximatives.
+Un algorithme génétique maintient une population de solutions candidates.
+La population initiale peut être générée avec des chromosomes aléatoires.
+La fonction de fitness attribue une valeur à chaque individu.
+Le croisement uniforme sélectionne chaque gène parmi les deux parents.
+La mutation inverse occasionnellement un bit du chromosome enfant.
+
+===== HISTORIQUE FITNESS =====
+1;0.6016253639470518
+2;0.6109541046726681
+3;0.6109541046726681
+4;0.6232107654083554
+5;0.6305217253237251
+6;0.6305414217805991
+7;0.6313482596067693
+8;0.6313482596067693
+9;0.6313482596067693
+10;0.6502490011845466
+11;0.6502490011845466
+12;0.6502490011845466
+13;0.6526174773791349
+14;0.6526174773791349
+15;0.6550713447066788
+16;0.6550713447066788
+17;0.655323282323327
+18;0.655323282323327
+19;0.655323282323327
+20;0.6590448037959961
+21;0.6591728616653804
+22;0.6591728616653804
+23;0.6616112168210218
+24;0.6616112168210218
+25;0.6616112168210218
+26;0.6616112168210218
+27;0.6620021041900142
+28;0.6620021041900142
+29;0.6620021041900142
+30;0.6620021041900142
+31;0.6620021041900142
+32;0.6620021041900142
+33;0.6620021041900142
+34;0.6620021041900142
+35;0.6620021041900142
+36;0.6620021041900142
+37;0.6620021041900142
+38;0.6620021041900142
+39;0.6620021041900142
+40;0.6620021041900142
+41;0.6620021041900142
+42;0.6620021041900142

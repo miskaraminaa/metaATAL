@@ -1,0 +1,25 @@
+Les modèles de langage sont devenus des outils importants pour le traitement automatique des langues.
+Ils apprennent des relations entre les mots à partir de grandes quantités de textes.
+Les architectures Transformer utilisent un mécanisme d'attention pour traiter les séquences.
+Ce mécanisme aide le modèle à relier des éléments éloignés dans une phrase.
+La phase de préentraînement mobilise généralement des ressources de calcul importantes.
+Une adaptation ultérieure peut spécialiser un modèle pour une tâche précise.
+La classification de documents consiste à attribuer une catégorie à chaque texte.
+L'analyse de sentiments cherche à déterminer la polarité d'un avis.
+La reconnaissance d'entités nommées repère des noms de personnes, de lieux ou d'organisations.
+La recherche d'information identifie les passages pertinents pour une question.
+Le résumé automatique répond au besoin de parcourir rapidement de longs documents.
+Dans un résumé extractif, les phrases retenues proviennent directement du document source.
+La sélection doit représenter les principaux thèmes sans multiplier les répétitions.
+La méthode TF-IDF transforme chaque phrase en un vecteur de poids lexicaux.
+La similarité cosinus compare l'orientation de deux vecteurs de caractéristiques.
+Une phrase proche du vecteur global peut contribuer à la représentativité du résumé.
+Deux phrases très similaires risquent de transmettre des informations redondantes.
+Une fonction de fitness combine plusieurs critères pour évaluer un résumé candidat.
+La longueur du résumé peut être contrôlée par une proportion cible de phrases.
+Un algorithme génétique représente chaque sélection par un chromosome binaire.
+La sélection favorise les chromosomes obtenant les meilleurs scores.
+Le croisement combine les choix de phrases de deux solutions parentes.
+La mutation inverse parfois un bit afin de diversifier les solutions explorées.
+L'élitisme conserve certains bons individus d'une génération à la suivante.
+Les expériences répétées permettent d'étudier la stabilité des résultats malgré l'aléatoire.

@@ -1,0 +1,78 @@
+===== CONFIGURATION =====
+[ga]
+pop_size = 50
+generations = 100
+crossover = "uniform"
+mutation_rate = 0.1
+elite_ratio = 0.5
+
+[nlp]
+input_file = "data/texte3.txt"
+use_stopwords = true
+
+[fitness]
+alpha = 1.0
+gamma = 0.3
+beta = 0.5
+
+[convergence]
+enabled = true
+min_delta = 1.0e-6
+patience = 15
+
+===== RESULTATS =====
+Chromosome : [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1]
+Fitness : 0.6516166286813646
+Generations : 34
+Phrases selectionnees : 12
+Ratio : 0.3157894736842105
+
+===== RESUME =====
+Le résumé automatique peut faciliter l'accès aux informations principales.
+Une approche extractive sélectionne des phrases sans modifier leur formulation.
+La ponctuation peut être retirée lorsque l'analyse repose sur les mots.
+Dans ce projet, chaque phrase est considérée comme un document du corpus.
+Une matrice associe les phrases aux termes présents dans le vocabulaire.
+Le vecteur moyen de toutes les phrases fournit une représentation globale du texte.
+La similarité cosinus mesure la proximité entre deux vecteurs numériques.
+Elle permet aussi d'estimer la répétition entre des phrases sélectionnées.
+La population initiale contient plusieurs chromosomes générés aléatoirement.
+Chaque individu reçoit un score calculé par la fonction de fitness.
+Le croisement uniforme choisit indépendamment l'origine de chaque bit.
+L'évaluation finale doit combiner les mesures numériques et une lecture critique des résumés.
+
+===== HISTORIQUE FITNESS =====
+1;0.6164609885341484
+2;0.6164609885341484
+3;0.6164609885341484
+4;0.6164609885341484
+5;0.617971978146616
+6;0.6276012553297711
+7;0.6276012553297711
+8;0.6292680626881247
+9;0.6292680626881247
+10;0.6320642948413288
+11;0.6320642948413288
+12;0.638336032534663
+13;0.638336032534663
+14;0.6446801154795944
+15;0.6446801154795944
+16;0.6446801154795944
+17;0.6446801154795944
+18;0.6446801154795944
+19;0.6516166286813646
+20;0.6516166286813646
+21;0.6516166286813646
+22;0.6516166286813646
+23;0.6516166286813646
+24;0.6516166286813646
+25;0.6516166286813646
+26;0.6516166286813646
+27;0.6516166286813646
+28;0.6516166286813646
+29;0.6516166286813646
+30;0.6516166286813646
+31;0.6516166286813646
+32;0.6516166286813646
+33;0.6516166286813646
+34;0.6516166286813646

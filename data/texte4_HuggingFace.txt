@@ -1,0 +1,56 @@
+# Source  : MLSUM/fr — Le Monde — https://huggingface.co/datasets/mteb/mlsum (config fr, split test)
+# Titre   : L'accès aux origines personnelles doit être garanti à tous les enfants conçus par don
+# Thème   : idées / société  |  Date : 04/06/2019
+# Difficulté : 4/4 — texte long (~52 phrases), registre argumentatif et conceptuel, structure non linéaire,
+#              vocabulaire juridique et éthique, nombreuses reformulations et digressions
+#
+Cent personnes conçues par procréation médicalement assistée (PMA) avec don de gamètes ont signé un appel demandant que les familles issues du don soient reconnues comme les autres familles.
+Cet appel est partagé par cent cinquante personnalités, dont la sociologue Irène Théry, le psychiatre Serge Hefez et l'historien Pierre Rosanvallon.
+Elles demandent que les parents soient de sexe différent ou non, que l'accès aux origines personnelles soit garanti à tous les enfants conçus par don, et que le projet de loi de bioéthique en cours d'examen au Parlement soit modifié en ce sens.
+Depuis plusieurs décennies, le droit de la filiation a profondément évolué en France.
+Il fut un temps où la famille nucléaire composée d'un père, d'une mère et de leurs enfants biologiques était considérée comme la seule forme légitime d'organisation familiale.
+Tout ce qui s'en écartait était pointé du doigt.
+Depuis, la société a évolué.
+La croyance en un modèle unique de famille n'a pas disparu, mais elle est devenue minoritaire.
+On ne considère plus que le seul « vrai » parent est le parent biologique ou celui qui passe pour tel.
+La loi reconnaît désormais la filiation adoptive, la filiation par possession d'état, et bien d'autres formes encore.
+Les familles recomposées, monoparentales, homoparentales font partie du paysage social ordinaire.
+Pourtant, dans un domaine particulier, celui de la procréation médicalement assistée avec don de gamètes ou d'embryons, les vieilles logiques de la dissimulation ont longtemps prévalu.
+Il fallait à tout prix permettre aux parents de passer pour les deux géniteurs.
+Le donneur, qu'on se représentait comme un rival potentiel du père, devait être effacé.
+Le secret entourant ces conceptions était présenté comme protecteur pour les familles et pour les enfants.
+Or les choses ont radicalement changé.
+Des associations de personnes conçues par don ont vu le jour et ont fait entendre leur voix.
+Des études ont montré que la révélation de son mode de conception n'était pas traumatisante pour les enfants, à condition qu'elle intervienne dans un contexte familial serein.
+Mais parallèlement, elles ont renforcé le secret.
+Car le recours au don n'a rien de honteux !
+C'est un geste de solidarité, qui permet à des personnes souffrant d'infertilité d'avoir des enfants.
+La question qui se pose aujourd'hui est celle des droits des personnes ainsi conçues.
+Ont-elles le droit de connaître leurs origines biologiques ?
+La réponse ne fait plus guère débat dans les pays qui ont réformé leur législation sur ce point : oui, elles en ont le droit.
+La France est l'un des derniers pays d'Europe occidentale à maintenir l'anonymat des donneurs de gamètes.
+C'est une situation de plus en plus difficile à défendre, notamment depuis que les tests génétiques grand public permettent aux personnes conçues par don de retrouver leurs donneurs, et parfois leurs demi-frères et demi-sœurs, par leurs propres moyens.
+Le projet de loi de bioéthique actuellement en discussion au Parlement prévoit de mettre fin à l'anonymat des donneurs.
+C'est un progrès important, mais insuffisant selon les signataires de l'appel.
+Car la levée de l'anonymat ne suffit pas si elle n'est pas accompagnée de mesures garantissant effectivement l'accès aux origines.
+Il faut notamment que les enfants soient informés de leur mode de conception, ce que la loi ne prévoit pas d'imposer aux parents.
+Or, dans les faits, beaucoup d'enfants conçus par don ignorent leur mode de conception.
+Leurs parents ont choisi de ne pas leur en parler, souvent par peur de leur réaction, ou parce qu'ils ne savent pas comment aborder le sujet.
+Il faut donc accompagner les familles, leur fournir des outils pour parler à leurs enfants de leur mode de conception.
+Des expériences étrangères montrent que cela est possible, notamment en Suède, en Belgique ou aux Pays-Bas, où la levée de l'anonymat est accompagnée d'un dispositif d'accompagnement des familles.
+La question de l'accès aux origines se pose avec une acuité particulière pour les enfants nés de mères célibataires ou de couples de femmes, qui ne peuvent pas faire semblant d'avoir été conçus « naturellement ».
+Ces enfants savent nécessairement qu'ils ont été conçus par don, mais ils peuvent ignorer qui est leur donneur.
+Le projet de loi de bioéthique prévoit d'ouvrir la PMA aux couples de femmes et aux femmes célibataires.
+C'est une avancée significative, qui répond à une demande sociale forte.
+Mais elle pose avec une nouvelle acuité la question de l'accès aux origines pour les enfants qui naîtront de ces nouvelles configurations familiales.
+L'appel des cent personnes conçues par don et des cent cinquante personnalités va dans le bon sens.
+Il rappelle que les droits des enfants doivent être au cœur de la réflexion sur la PMA.
+Ces enfants n'ont pas choisi leur mode de conception.
+Ils ne doivent pas être les victimes des débats idéologiques et politiques qui entourent la réforme de la bioéthique.
+Leur droit à connaître leurs origines est un droit fondamental, qui doit être garanti par la loi.
+Il appartient au Parlement de prendre ses responsabilités et d'adopter une législation qui garantisse effectivement ce droit, tout en respectant la diversité des formes familiales et en accompagnant les familles dans cette démarche.
+La France a su évoluer sur beaucoup de questions liées à la famille et à la filiation.
+Il est temps qu'elle le fasse aussi sur la question de l'accès aux origines pour les personnes conçues par don.
+C'est une question de justice et de respect des droits fondamentaux des personnes concernées.
+Les débats au Parlement sur le projet de loi de bioéthique sont l'occasion de franchir cette étape décisive.
+Il serait dommage de la manquer.

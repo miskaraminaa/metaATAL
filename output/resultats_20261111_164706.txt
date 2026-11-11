@@ -1,0 +1,65 @@
+===== CONFIGURATION =====
+[ga]
+pop_size = 50
+generations = 100
+crossover = "uniform"
+mutation_rate = 0.1
+elite_ratio = 0.5
+
+[nlp]
+input_file = "data/texte1_HuggingFace.txt"
+use_stopwords = true
+
+[fitness]
+alpha = 1.0
+gamma = 0.3
+beta = 0.5
+
+[convergence]
+enabled = true
+min_delta = 1.0e-6
+patience = 15
+
+===== RESULTATS =====
+Chromosome : [0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1]
+Fitness : 0.7131387060722199
+Generations : 28
+Phrases selectionnees : 5
+Ratio : 0.3333333333333333
+
+===== RESUME =====
+Mais à l'échelle mondiale, le Nigeria peine à confirmer.
+Cameroun : comme en 2015 ?
+En Afrique, le Cameroun est un peu perçu comme un perdant magnifique.
+Elles visent le même objectif cette année et leurs chances sont réelles.
+Elles ont acquis une expérience internationale précieuse qui pourrait faire la différence dans la compétition.
+
+===== HISTORIQUE FITNESS =====
+1;0.6462633665165098
+2;0.6867288109455164
+3;0.6867288109455164
+4;0.69286866754781
+5;0.69286866754781
+6;0.705769297379287
+7;0.705769297379287
+8;0.7083046630695319
+9;0.7083046630695319
+10;0.7083046630695319
+11;0.7083046630695319
+12;0.7083046630695319
+13;0.7131387060722199
+14;0.7131387060722199
+15;0.7131387060722199
+16;0.7131387060722199
+17;0.7131387060722199
+18;0.7131387060722199
+19;0.7131387060722199
+20;0.7131387060722199
+21;0.7131387060722199
+22;0.7131387060722199
+23;0.7131387060722199
+24;0.7131387060722199
+25;0.7131387060722199
+26;0.7131387060722199
+27;0.7131387060722199
+28;0.7131387060722199

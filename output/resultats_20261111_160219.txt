@@ -1,0 +1,59 @@
+===== CONFIGURATION =====
+[ga]
+pop_size = 50
+generations = 100
+crossover = "uniform"
+mutation_rate = 0.1
+elite_ratio = 0.5
+
+[nlp]
+input_file = "data/texte1_HuggingFace.txt"
+use_stopwords = true
+
+[fitness]
+alpha = 1.0
+gamma = 0.3
+beta = 0.5
+
+[convergence]
+enabled = true
+min_delta = 1.0e-6
+patience = 15
+
+===== RESULTATS =====
+Chromosome : [0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0]
+Fitness : 0.7167649756375418
+Generations : 22
+Phrases selectionnees : 5
+Ratio : 0.3125
+
+===== RESUME =====
+Mais à l'échelle mondiale, le Nigeria peine à confirmer.
+Cameroun : comme en 2015 ?
+En Afrique, le Cameroun est un peu perçu comme un perdant magnifique.
+Afrique du Sud : les Banyana Banyana font leur entrée L'Afrique du Sud n'a jamais participé à une Coupe du monde féminine.
+Elles visent le même objectif cette année et leurs chances sont réelles.
+
+===== HISTORIQUE FITNESS =====
+1;0.6904544988356124
+2;0.6904544988356124
+3;0.7122723585488249
+4;0.7122723585488249
+5;0.7122723585488249
+6;0.7122723585488249
+7;0.7167649756375418
+8;0.7167649756375418
+9;0.7167649756375418
+10;0.7167649756375418
+11;0.7167649756375418
+12;0.7167649756375418
+13;0.7167649756375418
+14;0.7167649756375418
+15;0.7167649756375418
+16;0.7167649756375418
+17;0.7167649756375418
+18;0.7167649756375418
+19;0.7167649756375418
+20;0.7167649756375418
+21;0.7167649756375418
+22;0.7167649756375418

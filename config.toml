@@ -1,0 +1,21 @@
+
+[nlp]
+use_stopwords = true
+input_file = "data/texte4_HuggingFace.txt"
+
+[fitness]
+alpha = 1.0
+beta = 0.5
+gamma = 0.3
+
+[ga]
+pop_size = 100
+generations = 100
+mutation_rate = 0.10
+elite_ratio = 0.50
+crossover = "uniform"
+
+[convergence]
+enabled = true
+patience = 15
+min_delta = 1.0e-6

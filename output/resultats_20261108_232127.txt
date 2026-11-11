@@ -1,0 +1,50 @@
+===== CONFIGURATION =====
+[ga]
+pop_size = 50
+generations = 100
+crossover = "uniform"
+mutation_rate = 0.1
+elite_ratio = 0.5
+
+[nlp]
+input_file = "data/input.txt"
+use_stopwords = true
+
+[fitness]
+alpha = 1.0
+gamma = 0.3
+beta = 0.5
+
+[convergence]
+enabled = true
+min_delta = 1.0e-6
+patience = 15
+
+===== RESULTATS =====
+Chromosome : [0, 1, 0, 0, 1]
+Fitness : 0.6041640455199289
+Generations : 16
+Phrases selectionnees : 2
+Ratio : 0.4
+
+===== RESUME =====
+Les modèles de langage permettent d'analyser des textes.
+Ces systèmes sélectionnent les informations pertinentes dans les documents.
+
+===== HISTORIQUE FITNESS =====
+1;0.6041640455199289
+2;0.6041640455199289
+3;0.6041640455199289
+4;0.6041640455199289
+5;0.6041640455199289
+6;0.6041640455199289
+7;0.6041640455199289
+8;0.6041640455199289
+9;0.6041640455199289
+10;0.6041640455199289
+11;0.6041640455199289
+12;0.6041640455199289
+13;0.6041640455199289
+14;0.6041640455199289
+15;0.6041640455199289
+16;0.6041640455199289

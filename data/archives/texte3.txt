@@ -1,0 +1,38 @@
+Les établissements universitaires produisent chaque année une grande quantité de documents numériques.
+Ces documents comprennent des rapports, des articles scientifiques et des comptes rendus.
+Leur consultation demande du temps lorsque les collections deviennent volumineuses.
+Le résumé automatique peut faciliter l'accès aux informations principales.
+Une approche extractive sélectionne des phrases sans modifier leur formulation.
+Cette propriété permet de retrouver facilement les passages dans le document original.
+Cependant, des phrases isolées peuvent manquer de contexte lorsqu'elles sont assemblées.
+Le prétraitement commence généralement par le chargement et la segmentation du texte.
+Chaque phrase est ensuite nettoyée pour préparer une représentation numérique.
+La normalisation peut convertir les lettres majuscules en minuscules.
+La ponctuation peut être retirée lorsque l'analyse repose sur les mots.
+Les mots très fréquents sont parfois supprimés pour réduire le bruit lexical.
+Cette suppression doit être évaluée car certains petits mots portent une information utile.
+La représentation TF-IDF mesure l'importance statistique des termes dans un corpus.
+Dans ce projet, chaque phrase est considérée comme un document du corpus.
+Une matrice associe les phrases aux termes présents dans le vocabulaire.
+Les lignes de cette matrice décrivent les caractéristiques lexicales des phrases.
+Le vecteur moyen de toutes les phrases fournit une représentation globale du texte.
+La similarité cosinus mesure la proximité entre deux vecteurs numériques.
+Elle peut comparer un résumé candidat au vecteur global du document.
+Elle permet aussi d'estimer la répétition entre des phrases sélectionnées.
+La fonction objectif doit récompenser la couverture des thèmes principaux.
+Elle doit également pénaliser les résumés qui dépassent la longueur souhaitée.
+Une pénalité de redondance évite de retenir trop de phrases semblables.
+Les poids de ces critères influencent les solutions considérées comme meilleures.
+Un algorithme génétique explore l'ensemble des combinaisons possibles de phrases.
+Chaque chromosome contient un bit pour chaque phrase du document.
+Un bit égal à un signifie que la phrase correspondante est sélectionnée.
+La population initiale contient plusieurs chromosomes générés aléatoirement.
+Chaque individu reçoit un score calculé par la fonction de fitness.
+Les meilleurs individus peuvent être conservés par une stratégie d'élitisme.
+Le croisement un point échange des segments entre deux chromosomes parents.
+Le croisement uniforme choisit indépendamment l'origine de chaque bit.
+La mutation modifie un choix de phrase afin de maintenir une certaine diversité.
+La recherche s'arrête après un nombre maximal de générations ou une période de stagnation.
+Une courbe de convergence retrace l'évolution du meilleur score obtenu.
+Des exécutions répétées avec différentes graines aident à mesurer la variabilité de la méthode.
+L'évaluation finale doit combiner les mesures numériques et une lecture critique des résumés.

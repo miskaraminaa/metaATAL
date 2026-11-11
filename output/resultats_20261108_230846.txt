@@ -1,0 +1,50 @@
+===== CONFIGURATION =====
+[ga]
+pop_size = 50
+generations = 100
+crossover = "uniform"
+mutation_rate = 0.1
+elite_ratio = 0.5
+
+[nlp]
+input_file = "data/input.txt"
+use_stopwords = true
+
+[fitness]
+alpha = 1.0
+gamma = 0.3
+beta = 0.5
+
+[convergence]
+enabled = true
+min_delta = 1.0e-6
+patience = 15
+
+===== RESULTATS =====
+Chromosome : [1, 0, 0, 0, 1]
+Fitness : 0.625530868962733
+Generations : 16
+Phrases selectionnees : 2
+Ratio : 0.4
+
+===== RESUME =====
+L'intelligence artificielle transforme de nombreux secteurs.
+Ces systèmes sélectionnent les informations pertinentes dans les documents.
+
+===== HISTORIQUE FITNESS =====
+1;0.625530868962733
+2;0.625530868962733
+3;0.625530868962733
+4;0.625530868962733
+5;0.625530868962733
+6;0.625530868962733
+7;0.625530868962733
+8;0.625530868962733
+9;0.625530868962733
+10;0.625530868962733
+11;0.625530868962733
+12;0.625530868962733
+13;0.625530868962733
+14;0.625530868962733
+15;0.625530868962733
+16;0.625530868962733

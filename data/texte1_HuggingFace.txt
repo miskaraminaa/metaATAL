@@ -1,0 +1,19 @@
+# Source  : MLSUM/fr — Le Monde — https://huggingface.co/datasets/mteb/mlsum (config fr, split test)
+# Titre   : Coupe du monde féminine 2019 : le Nigeria, le Cameroun et l'Afrique du Sud dans le grand bain
+# Thème   : sport  |  Date : 03/06/2019
+# Difficulté : 1/4 — texte court (~15 phrases), vocabulaire courant, structure narrative simple
+#
+Trois équipes africaines participeront à la Coupe du monde féminine de football qui débute vendredi 7 juin en France : le Nigeria, le Cameroun et l'Afrique du Sud.
+Le géant africain Le palmarès continental des Nigérianes est révélateur de la domination exercée par les Super Falcons en Afrique.
+Onze titres de championnes d'Afrique, dont le dernier remonte à 2016 : personne ne fait mieux sur le continent.
+Mais à l'échelle mondiale, le Nigeria peine à confirmer.
+Les Super Falcons ont participé à toutes les Coupes du monde depuis la création de l'épreuve en 1991, mais n'ont jamais dépassé les quarts de finale.
+Alors pour tenter de conjurer le mauvais sort, la fédération a décidé de mettre les moyens nécessaires.
+Et pour bien préparer le Mondial, un programme fourni, avec des matchs en Europe et en Chine, a été élaboré.
+En Afrique, le Cameroun est un peu perçu comme un perdant magnifique.
+Il a atteint quatre fois la finale de la CAN, mais sans jamais la remporter, et en novembre 2018 à Accra, le Nigeria, son habituel bourreau, l'a battu en demi-finale à l'issue d'une séance de tirs au but.
+Cela n'a pas empêché les Lionnes de se qualifier pour la Coupe du monde, mais l'argument n'a pas été suffisant pour que Joseph Ndoko soit maintenu au poste de sélectionneur.
+Les Banyana Banyana font leur entrée L'Afrique du Sud n'a jamais participé à une Coupe du monde féminine.
+Elles visent le même objectif cette année et leurs chances sont réelles.
+A Rio, certaines des joueuses retenues pour cette Coupe du monde étaient déjà présentes.
+Elles ont acquis une expérience internationale précieuse qui pourrait faire la différence dans la compétition.

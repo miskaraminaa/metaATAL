@@ -1,0 +1,93 @@
+===== CONFIGURATION =====
+[ga]
+pop_size = 100
+generations = 100
+crossover = "uniform"
+mutation_rate = 0.1
+elite_ratio = 0.5
+
+[nlp]
+input_file = "data/texte4_HuggingFace.txt"
+use_stopwords = true
+
+[fitness]
+alpha = 1.0
+gamma = 0.3
+beta = 0.5
+
+[convergence]
+enabled = true
+min_delta = 1.0e-6
+patience = 15
+
+===== RESULTATS =====
+Chromosome : [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1]
+Fitness : 0.7313617309333094
+Generations : 46
+Phrases selectionnees : 15
+Ratio : 0.3
+
+===== RESUME =====
+Tout ce qui s'en écartait était pointé du doigt.
+Depuis, la société a évolué.
+Or les choses ont radicalement changé.
+Mais parallèlement, elles ont renforcé le secret.
+Ont-elles le droit de connaître leurs origines biologiques ?
+Le projet de loi de bioéthique actuellement en discussion au Parlement prévoit de mettre fin à l'anonymat des donneurs.
+Il faut donc accompagner les familles, leur fournir des outils pour parler à leurs enfants de leur mode de conception.
+Ces enfants savent nécessairement qu'ils ont été conçus par don, mais ils peuvent ignorer qui est leur donneur.
+L'appel des cent personnes conçues par don et des cent cinquante personnalités va dans le bon sens.
+Il rappelle que les droits des enfants doivent être au cœur de la réflexion sur la PMA.
+Ces enfants n'ont pas choisi leur mode de conception.
+La France a su évoluer sur beaucoup de questions liées à la famille et à la filiation.
+Il est temps qu'elle le fasse aussi sur la question de l'accès aux origines pour les personnes conçues par don.
+C'est une question de justice et de respect des droits fondamentaux des personnes concernées.
+Il serait dommage de la manquer.
+
+===== HISTORIQUE FITNESS =====
+1;0.6562373204861924
+2;0.6608957072823356
+3;0.6722998702172165
+4;0.6722998702172165
+5;0.6867620738648196
+6;0.6867620738648196
+7;0.6867620738648196
+8;0.6867620738648196
+9;0.7029543014889789
+10;0.7029543014889789
+11;0.7029543014889789
+12;0.7101650723327679
+13;0.7191826691236325
+14;0.7191826691236325
+15;0.7191826691236325
+16;0.7238832160898735
+17;0.7238832160898735
+18;0.729368726722482
+19;0.729368726722482
+20;0.729368726722482
+21;0.729368726722482
+22;0.729368726722482
+23;0.730223607927398
+24;0.7304391996621984
+25;0.7310935036740582
+26;0.7310935036740582
+27;0.7310935036740582
+28;0.7310935036740582
+29;0.731303087171964
+30;0.731303087171964
+31;0.7313617309333094
+32;0.7313617309333094
+33;0.7313617309333094
+34;0.7313617309333094
+35;0.7313617309333094
+36;0.7313617309333094
+37;0.7313617309333094
+38;0.7313617309333094
+39;0.7313617309333094
+40;0.7313617309333094
+41;0.7313617309333094
+42;0.7313617309333094
+43;0.7313617309333094
+44;0.7313617309333094
+45;0.7313617309333094
+46;0.7313617309333094

@@ -1,0 +1,71 @@
+===== CONFIGURATION =====
+[ga]
+pop_size = 100
+generations = 100
+crossover = "uniform"
+mutation_rate = 0.1
+elite_ratio = 0.5
+
+[nlp]
+input_file = "data/texte2_HuggingFace.txt"
+use_stopwords = true
+
+[fitness]
+alpha = 1.0
+gamma = 0.3
+beta = 0.5
+
+[convergence]
+enabled = true
+min_delta = 1.0e-6
+patience = 15
+
+===== RESULTATS =====
+Chromosome : [0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1]
+Fitness : 0.6751852978276408
+Generations : 31
+Phrases selectionnees : 8
+Ratio : 0.32
+
+===== RESUME =====
+Il souffre d'un traumatisme crânien et d'une « fracture occipitale ».
+L'avocat critique le délai entre les faits et l'ouverture de l'enquête.
+Maria sera hospitalisée quinze jours.
+L'IGPN, la police des polices, a été saisie mais ses conclusions ne sont pas encore connues.
+Ces affaires s'inscrivent dans un contexte de vive polémique sur les violences policières lors du mouvement des « gilets jaunes ».
+Des associations de défense des droits de l'homme ont demandé la suspension de l'usage du LBD.
+C'est une question à laquelle l'enquête préliminaire devra répondre.
+Le dossier a été confié à la brigade criminelle de Marseille.
+
+===== HISTORIQUE FITNESS =====
+1;0.6201675683254841
+2;0.6315440409308548
+3;0.6351830660120862
+4;0.6438455062796736
+5;0.6533311858689945
+6;0.6550220262479276
+7;0.6550220262479276
+8;0.6583336741706067
+9;0.6665157659214789
+10;0.6686449988984259
+11;0.6707367572938696
+12;0.6707367572938696
+13;0.6732313056353036
+14;0.6732313056353036
+15;0.6732313056353036
+16;0.6751852978276408
+17;0.6751852978276408
+18;0.6751852978276408
+19;0.6751852978276408
+20;0.6751852978276408
+21;0.6751852978276408
+22;0.6751852978276408
+23;0.6751852978276408
+24;0.6751852978276408
+25;0.6751852978276408
+26;0.6751852978276408
+27;0.6751852978276408
+28;0.6751852978276408
+29;0.6751852978276408
+30;0.6751852978276408
+31;0.6751852978276408

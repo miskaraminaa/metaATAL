@@ -1,0 +1,43 @@
+# Source  : MLSUM/fr — Le Monde — https://huggingface.co/datasets/mteb/mlsum (config fr, split test)
+# Titre   : Les Etats-Unis et la Chine installent une nouvelle guerre froide
+# Thème   : international  |  Date : 02/06/2019
+# Difficulté : 3/4 — texte long (~38 phrases), registre géopolitique, vocabulaire technique, multiple acteurs
+#
+Au forum sur la sécurité de Singapour, le ministre de la défense chinois Wei Fenghe a promis de « combattre jusqu'au bout » si quelqu'un osait séparer Taiwan de la Chine.
+Le secrétaire américain à la défense, Patrick Shanahan, a averti pour sa part que la Chine cherchait à « militariser la mer de Chine méridionale ».
+Ces déclarations illustrent la profondeur des tensions entre les deux premières puissances mondiales, qui s'affrontent désormais sur tous les fronts.
+La guerre commerciale que se livrent Washington et Pékin depuis plus d'un an a franchi un nouveau palier ces dernières semaines, avec la décision américaine d'interdire à ses entreprises de travailler avec le géant chinois des télécommunications Huawei.
+Cette décision a été présentée par Washington comme une mesure de sécurité nationale, Huawei étant soupçonné d'espionner pour le compte de Pékin, ce que l'entreprise et le gouvernement chinois nient.
+Mais elle est aussi perçue comme une tentative d'affaiblir durablement un concurrent technologique chinois qui est en passe de devenir le leader mondial de la 5G.
+La riposte de Pékin ne s'est pas fait attendre : la Chine a annoncé qu'elle dressait une liste noire d'entreprises étrangères « peu fiables ».
+Les négociations commerciales entre les deux pays sont dans l'impasse depuis que Washington a relevé ses droits de douane sur 200 milliards de dollars de marchandises chinoises en mai.
+Pékin a répliqué en augmentant ses propres droits de douane sur 60 milliards de dollars d'importations américaines.
+Les deux pays ne se parlent plus depuis plusieurs semaines au niveau ministériel.
+Cette dispute commerciale s'inscrit dans un contexte de rivalité stratégique plus large entre les deux pays.
+Washington accuse Pékin de poursuivre une politique délibérée de vol de propriété intellectuelle et de transferts forcés de technologies.
+Les Américains reprochent également à la Chine ses pratiques commerciales déloyales et les subventions massives accordées à ses entreprises d'État.
+De son côté, Pékin considère que les États-Unis cherchent à contenir l'essor de la Chine et à l'empêcher de prendre la place qui lui revient dans l'ordre mondial.
+Cette vision d'une rivalité de puissances, qui rappelle celle qui opposa les États-Unis et l'Union soviétique durant la guerre froide, se confirme dans le domaine militaire.
+Les États-Unis ont effectué ces derniers mois plusieurs opérations de « liberté de navigation » en mer de Chine méridionale, envoyant des navires de guerre à proximité des îles artificielles construites par Pékin.
+Ces îles, que la Chine a militarisées en y installant des équipements radar et des systèmes d'armes, sont revendiquées par plusieurs pays voisins.
+Un tribunal arbitral international avait jugé en 2016 que ces revendications chinoises n'avaient pas de fondement juridique, mais Pékin a refusé de reconnaître cette décision.
+Dans le domaine technologique, la rivalité sino-américaine se joue aussi autour de l'intelligence artificielle, de la robotique et de l'informatique quantique.
+Les États-Unis cherchent à contrôler l'accès de la Chine aux technologies de pointe en resserrant les contrôles à l'exportation.
+La question de Taiwan constitue l'un des points les plus sensibles de la relation sino-américaine.
+Pékin considère l'île comme une province rebelle et n'exclut pas l'usage de la force pour la « réunifier » avec le continent.
+Washington maintient des relations officieuses avec Taipei et lui vend des armes, ce que Pékin condamne comme une ingérence dans ses affaires intérieures.
+Le Congrès américain a adopté cette année plusieurs textes renforçant les liens avec Taiwan, ce qui a provoqué l'ire de Pékin.
+Sur le plan diplomatique, les deux pays s'affrontent également dans les enceintes multilatérales.
+La Chine cherche à étendre son influence au sein des institutions internationales, en promouvant ses propres normes et standards technologiques.
+Les États-Unis, de leur côté, tentent de rallier leurs alliés à leur cause dans ce qui ressemble de plus en plus à une compétition pour définir les règles du jeu du XXIe siècle.
+L'Europe se retrouve prise en étau entre les deux grandes puissances, sommée de choisir son camp sur des questions comme la 5G ou les investissements chinois dans les infrastructures stratégiques.
+Des pays comme l'Allemagne ou la France ont adopté des positions plus nuancées, cherchant à préserver leurs relations économiques avec la Chine tout en partageant certaines préoccupations américaines.
+La question de savoir si cette rivalité sino-américaine va déboucher sur un véritable « découplage » des deux économies, ou si les interdépendances sont trop profondes pour permettre une telle séparation, est au cœur des débats des experts.
+Certains analystes estiment que nous sommes entrés dans une nouvelle guerre froide, avec deux blocs qui s'affrontent à l'échelle mondiale.
+D'autres, plus optimistes, pensent que les intérêts économiques communs finiront par l'emporter et que les deux pays trouveront un modus vivendi.
+Ce qui est certain, c'est que la relation entre les États-Unis et la Chine va continuer à dominer l'agenda international dans les années à venir.
+Les marchés financiers, qui ont réagi nerveusement aux dernières escalades commerciales, restent particulièrement attentifs à l'évolution de cette relation.
+Une résolution rapide du conflit commercial n'est pas exclue, notamment si les deux présidents se rencontrent en marge du sommet du G20 à Osaka fin juin.
+Mais les observateurs estiment que même si un accord commercial était conclu, les tensions structurelles entre les deux puissances ne disparaîtraient pas pour autant.
+La compétition sino-américaine semble être l'une des réalités durables du monde du XXIe siècle.
+Le reste du monde va devoir apprendre à naviguer dans cet environnement complexe et incertain.
