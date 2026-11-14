@@ -401,14 +401,7 @@ Pour le **texte 1 (14 phrases)**, une recherche exhaustive permet de calculer l'
 - Tester des documents plus longs et d'autres domaines.
 - Étudier une optimisation multiobjectif séparant représentativité, longueur et redondance.
 
-## 13. Rapport et figures
-
-Le rapport LaTeX présente la formulation, l'algorithme, le protocole, les résultats et leurs limites. Les graphiques de `output/` permettent d'illustrer les tendances ; ils sont complémentaires des fichiers CSV qui conservent les résultats par graine.
-<<<<<<< HEAD
-=======
-
-
-## 14. Évaluation qualitative des résumés
+## 13. Évaluation qualitative des résumés
 
 La fitness ne mesure pas directement la fluidité de lecture. Une inspection qualitative des textes 3 et 4 a été présentée dans le rapport, sur **une sortie par texte** :
 
@@ -421,7 +414,7 @@ La fitness ne mesure pas directement la fluidité de lecture. Une inspection qua
 
 Cette lecture est **illustrative** et non une évaluation humaine normalisée. L'ordre original des phrases est conservé, mais cela ne suffit pas toujours à assurer des transitions naturelles.
 
-## 15. Limites méthodologiques et reproductibilité
+## 14.Limites méthodologiques et reproductibilité
 
 - **Comparabilité :** lorsque `alpha`, `beta` ou `gamma` changent, comparer les composantes (similarité, redondance, ratio de phrases) plutôt que les scores bruts de fitness. Les métriques calculées avec et sans stopwords reposent aussi sur des espaces TF-IDF différents.
 - **Mesures de temps :** les premières exécutions Julia peuvent inclure la compilation ; les temps doivent être interprétés avec prudence.
@@ -429,21 +422,4 @@ Cette lecture est **illustrative** et non une évaluation humaine normalisée. L
 - **Arrêt anticipé :** l'effet de `patience` et de `min_delta` a été étudié ; une comparaison spécifique `enabled = true` contre `enabled = false` doit être ajoutée si elle n'a pas encore été exécutée.
 - **Fichiers de sortie :** les figures et CSV peuvent dépendre des scripts réellement lancés. Vérifier leur présence avant de les référencer dans le rapport.
 
-## 16. Git et GitHub
 
-Dépôt : **[miskaraminaa/metaATAL](https://github.com/miskaraminaa/metaATAL)**.
-
-Depuis le terminal **à la racine du projet** :
-
-```bash
-git status
-git add README.md
-git commit -m "Documenter l'architecture et les expériences de l'AG"
-git pull --rebase origin main
-git push origin main
-```
-
-Pour publier également d'autres modifications du projet, remplacer `git add README.md` par `git add .` **après vérification** des fichiers à inclure (`git status`). Ne pas utiliser `git push --force` pour résoudre un rejet `non-fast-forward` sans comprendre les changements distants.
-
-Si Git affiche `not a git repository`, se placer dans le dossier `metaATAL` contenant `.git`. Si `git status` indique `nothing to commit, working tree clean`, aucun nouveau commit n'est nécessaire.
->>>>>>> a3be2ee (Documentation et experiences de l'AG)
