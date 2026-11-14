@@ -77,6 +77,7 @@ Avec la probabilité `mutation_rate`, **un bit choisi aléatoirement** est inver
 
 L'exécution est limitée par `generations`. Un **arrêt anticipé** peut interrompre l'évolution lorsque la meilleure fitness ne s'améliore pas suffisamment pendant `patience` générations, selon le seuil `min_delta`.
 
+<<<<<<< HEAD
 ### Pseudo-code
 
 ```text
@@ -97,6 +98,106 @@ Pour chaque génération :
 Retourner le meilleur chromosome, sa fitness et l'historique
 ```
 
+=======
+### Architecture fonctionnelle
+
+Le projet sépare le traitement linguistique, l'optimisation et l'analyse expérimentale :
+
+```mermaid
+flowchart TD
+    A[Texte français dans data/] --> B[preprocessing.jl : segmentation, nettoyage, TF-IDF]
+    B --> C[Matrice TF-IDF des phrases et vecteur du document]
+    C --> D[genetic_algorithm.jl : recherche de chromosomes]
+    F[fitness.jl : similarité, longueur, redondance] <--> D
+    G[config.toml : paramètres NLP, fitness, AG, convergence] --> B
+    G --> D
+    D --> H[Meilleur chromosome, score, historique]
+    H --> I[results.jl : résumé et résultats]
+    C --> J[exhaustive_search.jl : optimum sur petits textes]
+    C --> K[experiments.jl : répétitions et variations des paramètres]
+    K --> L[CSV et graphiques dans output/]
+```
+
+### Organigramme de l'algorithme génétique
+
+```mermaid
+flowchart TD
+    A([Début]) --> B[Initialiser P chromosomes binaires]
+    B --> C[Évaluer la fitness de chaque individu]
+    C --> D[Classer par fitness décroissante]
+    D --> E[Mettre à jour meilleur global et stagnation]
+    E --> F[Enregistrer le meilleur score dans history]
+    F --> G{Stagnation >= patience et arrêt activé ?}
+    G -- Oui --> Z([Retourner meilleur chromosome, score, historique])
+    G -- Non --> H[Copier les E meilleures solutions : élites]
+    H --> I{Nouvelle population complète ?}
+    I -- Non --> J[Tirer deux parents parmi les élites]
+    J --> K[Croisement uniforme ou à un point]
+    K --> L{Mutation déclenchée ?}
+    L -- Oui --> M[Inverser un bit aléatoire]
+    L -- Non --> N[Ajouter l'enfant]
+    M --> N
+    N --> I
+    I -- Oui --> O[Remplacer la population]
+    O --> P{Nombre maximal de générations atteint ?}
+    P -- Non --> C
+    P -- Oui --> Z
+```
+
+**Remarque :** l'évaluation intervient **au début de chaque génération**, et le test de stagnation **avant** la reproduction. Le meilleur global est sauvegardé indépendamment de la population courante. Une nouvelle population créée après la dernière évaluation n'est pas évaluée si la limite de générations est atteinte.
+
+### Pseudo-code fidèle à l'implémentation
+
+```text
+Initialiser P chromosomes binaires aléatoires
+best_score ← -∞ ; best_individual ← chromosome nul
+history ← [] ; stagnation ← 0
+E ← min(P, max(2, floor(elite_ratio × P)))
+
+POUR generation = 1 à generations :
+    scores ← fitness(individu) pour chaque individu de la population
+    order ← indices triés par fitness décroissante
+    current_score ← score du meilleur individu courant
+
+    SI current_score > best_score :
+        SI current_score > best_score + min_delta :
+            stagnation ← 0
+        SINON :
+            stagnation ← stagnation + 1
+        best_score ← current_score
+        best_individual ← copie du meilleur individu courant
+    SINON :
+        stagnation ← stagnation + 1
+
+    Ajouter best_score à history
+    SI arrêt activé ET stagnation >= patience :
+        ARRÊTER LA BOUCLE
+
+    elites ← copies des E meilleurs individus
+    nouvelle_population ← copie de la liste des élites
+    TANT QUE taille(nouvelle_population) < P :
+        p1, p2 ← tirages aléatoires parmi les élites
+        enfant ← croisement(p1, p2)
+        SI tirage aléatoire < mutation_rate :
+            inverser un seul bit de l'enfant
+        Ajouter enfant à nouvelle_population
+    population ← nouvelle_population
+
+RETOURNER best_individual, best_score, history
+```
+
+### Exemple d'une génération
+
+Pour un texte de cinq phrases, le chromosome `10110` conserve les phrases 1, 3 et 4. Avec `pop_size = 6` et `elite_ratio = 0.5`, les **trois meilleurs chromosomes** sont copiés sans modification. Les trois places restantes sont remplies par des enfants issus de croisements entre élites, suivis éventuellement d'une mutation. Chaque enfant sera évalué au début de la génération suivante.
+
+### Exploration, exploitation et convergence
+
+- **Exploitation :** l'élitisme conserve les meilleurs chromosomes et les utilise comme parents. Le nombre d'élites est `min(pop_size, max(2, floor(elite_ratio * pop_size)))`.
+- **Exploration :** le croisement recombine les gènes des parents ; la mutation peut ajouter ou retirer une phrase en inversant un bit.
+- **Stagnation :** `current_score` est le meilleur score de la génération ; `best_score` est le meilleur depuis le début. Une amélioration strictement supérieure à `min_delta` remet le compteur à zéro. Une petite amélioration positive met à jour `best_score` mais augmente quand même la stagnation.
+- **Arrêt anticipé :** si `convergence.enabled = true`, l'AG s'arrête lorsque `stagnation >= patience`, sans garantie d'atteindre l'optimum global. Il s'arrête également au maximum de générations configuré.
+
+>>>>>>> a3be2ee (Documentation et experiences de l'AG)
 ## 5. Organisation du projet
 
 ```text
@@ -118,7 +219,12 @@ metaATAL/
 │   ├── results.jl              # Sauvegarde et visualisation
 │   ├── exhaustive_search.jl    # Recherche exacte sur petits textes
 │   ├── experiments.jl         # Expériences paramétriques
+<<<<<<< HEAD
 │   ├── experiments_mutation.jl # Tests complémentaires (si conservés)
+=======
+│   ├── experiments_mutation.jl # Tests complémentaires de mutation
+│   ├── plot_experiments.jl    # Visualisation des résultats (si présent)
+>>>>>>> a3be2ee (Documentation et experiences de l'AG)
 │   └── test_preprocessing.jl   # Vérification du prétraitement
 └── output/
     ├── experiences_*.csv      # Résultats des essais
@@ -138,8 +244,13 @@ metaATAL/
 
 ```bash
 # Cloner le dépôt (remplacer par l'URL réelle)
+<<<<<<< HEAD
 git clone https://github.com/UTILISATEUR/DEPOT.git
 cd DEPOT
+=======
+git clone https://github.com/miskaraminaa/metaATAL.git
+cd metaATAL
+>>>>>>> a3be2ee (Documentation et experiences de l'AG)
 
 # Installer les dépendances déclarées dans Project.toml
 julia --project=. -e 'using Pkg; Pkg.instantiate()'
@@ -174,7 +285,11 @@ patience = 15
 min_delta = 1e-6
 ```
 
+<<<<<<< HEAD
 Ce bloc correspond à une **configuration de référence**, pas nécessairement à la meilleure configuration universelle.
+=======
+Ce bloc reprend les valeurs du fichier de configuration présenté dans le projet pour une exécution standard. **Attention :** certaines campagnes expérimentales fixent `pop_size = 100` dans le script, indépendamment de la valeur `50` ci-dessus. Il ne s’agit pas d’une meilleure configuration universelle.
+>>>>>>> a3be2ee (Documentation et experiences de l'AG)
 
 ## 8. Exécution
 
@@ -289,3 +404,46 @@ Pour le **texte 1 (14 phrases)**, une recherche exhaustive permet de calculer l'
 ## 13. Rapport et figures
 
 Le rapport LaTeX présente la formulation, l'algorithme, le protocole, les résultats et leurs limites. Les graphiques de `output/` permettent d'illustrer les tendances ; ils sont complémentaires des fichiers CSV qui conservent les résultats par graine.
+<<<<<<< HEAD
+=======
+
+
+## 14. Évaluation qualitative des résumés
+
+La fitness ne mesure pas directement la fluidité de lecture. Une inspection qualitative des textes 3 et 4 a été présentée dans le rapport, sur **une sortie par texte** :
+
+| Critère | Texte 3 : rivalité sino-américaine | Texte 4 : PMA et accès aux origines |
+|---|---|---|
+| Phrases retenues | 12 sur 38 (31,6 %) | 15 sur 50 (30 %) |
+| Pertinence | Plusieurs dimensions de la rivalité sont couvertes | Le droit aux origines et les droits des enfants sont présents |
+| Cohérence | Une ouverture avec « Mais elle » manque d'antécédent | Certaines phrases isolées manquent de contexte |
+| Redondance | Répétitions thématiques limitées | Quelques recoupements sur les droits et l'accès aux origines |
+
+Cette lecture est **illustrative** et non une évaluation humaine normalisée. L'ordre original des phrases est conservé, mais cela ne suffit pas toujours à assurer des transitions naturelles.
+
+## 15. Limites méthodologiques et reproductibilité
+
+- **Comparabilité :** lorsque `alpha`, `beta` ou `gamma` changent, comparer les composantes (similarité, redondance, ratio de phrases) plutôt que les scores bruts de fitness. Les métriques calculées avec et sans stopwords reposent aussi sur des espaces TF-IDF différents.
+- **Mesures de temps :** les premières exécutions Julia peuvent inclure la compilation ; les temps doivent être interprétés avec prudence.
+- **Validation exacte :** la recherche exhaustive sur 14 phrases ne permet pas de conclure à l'optimalité sur les textes de 25, 38 et 50 phrases.
+- **Arrêt anticipé :** l'effet de `patience` et de `min_delta` a été étudié ; une comparaison spécifique `enabled = true` contre `enabled = false` doit être ajoutée si elle n'a pas encore été exécutée.
+- **Fichiers de sortie :** les figures et CSV peuvent dépendre des scripts réellement lancés. Vérifier leur présence avant de les référencer dans le rapport.
+
+## 16. Git et GitHub
+
+Dépôt : **[miskaraminaa/metaATAL](https://github.com/miskaraminaa/metaATAL)**.
+
+Depuis le terminal **à la racine du projet** :
+
+```bash
+git status
+git add README.md
+git commit -m "Documenter l'architecture et les expériences de l'AG"
+git pull --rebase origin main
+git push origin main
+```
+
+Pour publier également d'autres modifications du projet, remplacer `git add README.md` par `git add .` **après vérification** des fichiers à inclure (`git status`). Ne pas utiliser `git push --force` pour résoudre un rejet `non-fast-forward` sans comprendre les changements distants.
+
+Si Git affiche `not a git repository`, se placer dans le dossier `metaATAL` contenant `.git`. Si `git status` indique `nothing to commit, working tree clean`, aucun nouveau commit n'est nécessaire.
+>>>>>>> a3be2ee (Documentation et experiences de l'AG)

@@ -84,8 +84,6 @@ end
 
 
 
-
-
 # Nettoyer une phrase
 function clean_string(sentence::AbstractString)
     text = lowercase(sentence)
