@@ -1,4 +1,4 @@
-document,parameter,value,seed,fitness,generations,time_seconds
+document,parameter,value,seed,fitness,generations,time_seconds,similarity,redundancy,compression_ratio
 texte1_HuggingFace.txt,use_stopwords,true,42,0.6680108588609369,20,0.5796927,0.7263348105839985,0.0023621891604088036,0.35714285714285715
 texte1_HuggingFace.txt,use_stopwords,true,123,0.6680108588609369,24,0.0575273,0.7263348105839985,0.0023621891604088036,0.35714285714285715
 texte1_HuggingFace.txt,use_stopwords,true,456,0.6680108588609369,22,0.0165861,0.7263348105839985,0.0023621891604088036,0.35714285714285715

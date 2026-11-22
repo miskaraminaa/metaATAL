@@ -144,6 +144,7 @@ end
 end
 
 # Sauvegarder les résultats
+
 function save_experiment_results(results, filename)
     output_dir = joinpath(ROOT, "output")
     mkpath(output_dir)
@@ -153,7 +154,7 @@ function save_experiment_results(results, filename)
     open(path, "w") do io
         println(
             io,
-            "document,parameter,value,seed,fitness,generations,time_seconds"
+            "document,parameter,value,seed,fitness,generations,time_seconds,similarity,redundancy,compression_ratio"
         )
 
         for result in results
@@ -163,6 +164,7 @@ function save_experiment_results(results, filename)
 
     println("\nRésultats enregistrés : ", path)
 end
+
 
 function run_all_experiments()
     cfg = TOML.parsefile(joinpath(ROOT, "config.toml"))

@@ -1,4 +1,4 @@
-document,parameter,value,seed,fitness,generations,time_seconds
+document,parameter,value,seed,fitness,generations,time_seconds,similarity,redundancy,compression_ratio
 texte1_HuggingFace.txt,gamma,0.2,42,0.5887339738073493,20,0.0120456,0.6030196880930635,0.0,0.21428571428571427
 texte1_HuggingFace.txt,gamma,0.2,123,0.5887339738073493,22,0.0103337,0.6030196880930635,0.0,0.21428571428571427
 texte1_HuggingFace.txt,gamma,0.2,456,0.5887339738073493,19,0.0101215,0.6030196880930635,0.0,0.21428571428571427
